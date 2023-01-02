@@ -43,16 +43,17 @@ function Nav() {
                    </Link>
                 
                 </li>
+                 <li>
+                <Link to = "/about" className='navbar-link'>
+                     About
+                   </Link>
+                </li>
                 <li>
                 <Link to = "/service" className='navbar-link'>
                      Services
                    </Link>
                 </li>
-                <li>
-                <Link to = "/about" className='navbar-link'>
-                     About
-                   </Link>
-                </li>
+               
                 <li>
                 <Link to = "/contact" className='navbar-link'>
                     Contact

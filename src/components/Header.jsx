@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../images/images.png'
 import Navbar from './Navbar';
 import styled from 'styled-components';
 
@@ -9,7 +8,7 @@ const Header = () => {
     <div>
     <MainHeader>
         <NavLink to="/">
-        <img src={Logo} className="logo" alt="" />
+        <img src='./images/images.png' className="logo" alt="" />
         </NavLink>
         <Navbar/>
     </MainHeader>

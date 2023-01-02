@@ -1,9 +1,15 @@
 import React from 'react';
+import HeroSection from './components/HeroSection';
 
 const About = () => {
+  const data = {
+    name:"Aqsa Faisal",
+    image:"./images/about1.svg"
+  };
+  
   return (
     <div>
-       I am AboutPage
+      <HeroSection {...data} />
     </div>
   )
 }

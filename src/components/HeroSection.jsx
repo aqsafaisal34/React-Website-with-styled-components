@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
-import Image from '../images/hero.svg';
 
 
-const HeroSection = () => {
+
+const HeroSection = ({name,image}) => {
   
 
   return (
@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
           <p className="hero-top-data">THIS IS ME</p>
-          <h1 className="hero-heading">Aqsa Faisal</h1>
+          <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">
             I'm Aqsa. Mern Stack Developer
           </p>
@@ -25,7 +25,7 @@ const HeroSection = () => {
         {/* for image  */}
         <div className="section-hero-image">
           <picture>
-            <img src={Image} alt="" className="hero-img " />
+            <img src={image} alt="" className="hero-img " />
           </picture>
         </div>
       </div>
