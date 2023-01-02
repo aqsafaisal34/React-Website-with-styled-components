@@ -1,17 +1,13 @@
-import React from 'react';
-import HeroSection from './components/HeroSection';
+import React, { useEffect } from "react";
+import HeroSection from "./components/HeroSection";
+import { useGlobalContext } from "./context";
 
 const About = () => {
-  const data = {
-    name:"Aqsa Faisal",
-    image:"./images/about1.svg"
-  };
-  
-  return (
-    <div>
-      <HeroSection {...data} />
-    </div>
-  )
-}
+  const { udpateAboutPage } = useGlobalContext();
+
+  useEffect(() => udpateAboutPage(), []);
+
+  return <HeroSection />;
+};
 
 export default About;

@@ -8,7 +8,7 @@ const Header = () => {
     <div>
     <MainHeader>
         <NavLink to="/">
-        <img src='./images/images.png' className="logo" alt="" />
+        <img src='./images/download.png' className="logo" alt="" />
         </NavLink>
         <Navbar/>
     </MainHeader>
@@ -25,7 +25,7 @@ background-color: ${({theme})=>theme.colors.bg};
 align-items: center;
 .logo{
   height:auto;
-  width:50%;
+  width:100%;
 }
 `
 
