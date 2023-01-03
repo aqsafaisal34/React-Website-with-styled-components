@@ -38,7 +38,7 @@ const AppProvider = ({ children }) => {
       type: "SERVICES_UPDATE",
       payload: {
         name: "Aqsa Faisal",
-        image: "./images/images.jpeg",
+        image: "",
       },
     });
   };

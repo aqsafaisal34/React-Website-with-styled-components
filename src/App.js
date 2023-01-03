@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from './Error';
+import GoToTop from "./components/GoToTop";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <GoToTop />
       <BrowserRouter>
         <Header />
         <Routes>
